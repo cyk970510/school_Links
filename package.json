@@ -1,0 +1,15 @@
+{
+  "name": "school-Links",
+  "version": "1.0.0",
+  "description": "全校通",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lipo",
+  "license": "ISC",
+  "dependencies": {
+    "vant-weapp": "^0.5.16"
+  }
+}
