@@ -1,54 +1,73 @@
 //index.js
-//获取应用实例
-const app = getApp()
-
+import Dialog from '/vant-weapp/dialog/dialog';
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
+	data: {
+		active: 1,
+		tabArr: [
+			{
+				title: '全部',
+				name: 'all'
+			},
+			{
+				title: '活动',
+				name: 'active'
+			},
+			{
+				title: '讲座',
+				name: 'lecture'
+			}
+		],
+		contentData: [
+		{
+			img: './../../../images/mode/content-header.png',
+			name: '小明',
+			school: '医学信息工程学院',
+			content: '发布活动： 与xx月xx日有活动xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+			contentImg: './../../../images/mode/content-body.jpg',
+			forwards: 30,
+			comments: 20,
+			supports: 10
+		},
+		{
+			img: './../../../images/mode/content-header.png',
+			name: '小鸿',
+			school: '一院',
+			content: '发布活动： 与xx月xx日有活动xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+			contentImg: './../../../images/mode/content-body.jpg',
+			forwards: 0,
+			comments: 0,
+			supports: 0
+		}
+		],
+	},
+	//事件处理函数
+	bindViewTap: function() {
+
+	},
+	onLoad: function () {
+
+	},
+	changeTab(e) {
+		switch(e.detail.name) {
+			case 'active':
+				// do something
+				break;
+			case 'lecture':
+				// do something
+				break;
+			default: 
+				// do something
+		}
+		// console.log(e.detail.title);
+	},
+	addActive () {
+		Dialog.confirm({
+				title: '提示',
+				message: '您还未实名登记，是否前往实名登记'
+			}).then(() => {
+				// on confirm
+			}).catch(() => {
+				// on cancel
+	  	});
+	}
 })

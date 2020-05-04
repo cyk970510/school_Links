@@ -33,7 +33,10 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
+  	// 全局对象。0.0.
+	globalData: {
+
+    // URL请求域名
+    baseUrl: 'localhost:4455'
   }
 })

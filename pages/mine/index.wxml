@@ -1,0 +1,32 @@
+<view class="mine">
+    <view class="mine-header">
+        <view class="mine-header__img">
+            <image mode="scaleToFill" src="./../../images/mine/avatar.png"></image>
+        </view>
+        <view class="mine-header__msg">
+            <view class="mine-header__msgName">*****同学</view>
+            <view class="mine-header__magSchool">********学院</view>
+        </view>
+    </view>
+    <view class="mine-body">
+        <view class="mine-body__item">
+            <view>参加记录</view>
+            <view class="mine-body__itemIcon">></view>
+        </view>
+        <view class="mine-body__item">
+            <view>发布记录</view>
+            <view class="mine-body__itemIcon">></view>
+        </view>
+        <view class="mine-body__item">
+            <view>个人信息</view>
+            <view class="mine-body__itemIcon">></view>
+        </view>
+        <view class="mine-body__item">
+            <view>账号管理</view>
+            <view class="mine-body__itemIcon">></view>
+        </view>
+    </view>
+    <view class="mine-dislog">
+        <van-dialog id="van-dialog" />
+    </view>
+</view>

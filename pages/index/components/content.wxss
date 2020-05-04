@@ -1,0 +1,68 @@
+.content {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.content-header{
+    width: 90%;
+    margin-left: 5%;
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+}
+.content-header__img image{
+    width: 75rpx;
+    height: 75rpx;
+    border-radius: 50%;
+}
+.content-header__msg{
+    margin-left: 5%;
+}
+.content-header__name{
+    font-size: 30rpx;
+}
+.content-header__school{
+    width: 100%;
+    margin-left: 5%;
+    font-size: 18rpx;
+}
+.content-body{
+    width: 90%;
+    margin-left: 5%;
+}
+.content-body__content{
+    width: 100%;
+    font-size: 28rpx;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content-body__img{
+    width: 80%;
+    height: 350rpx;
+    border-radius: 2%;
+}
+.content-bottom{
+    width: 60%;
+    height: 40rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 10rpx;
+}
+.content-bottom__wrapper{
+    width: 17%;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-bottom__count{
+    margin-top: -5rpx;
+    font-size: 26rpx;
+}

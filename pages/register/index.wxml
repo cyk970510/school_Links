@@ -1,0 +1,44 @@
+<view class="register">
+    <view class="register-header">
+        请填写以下个人信息:
+    </view>
+    <view class="regiester-content">
+        <van-cell-group>
+            <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="姓名"
+                placeholder="请输入姓名"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="学号"
+                placeholder="请输入学号"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="学院"
+                placeholder="请输入学院"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="联系手机"
+                placeholder="请输入联系手机"
+                bind:click-icon="onClickIcon"
+            />
+        </van-cell-group>
+    </view>
+    <view class="regiester-btn">
+        <button open-type='getUserInfo' type="primary" bindgetuserinfo='getUserInfo'>提交</button>
+    </view>
+</view>

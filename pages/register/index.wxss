@@ -1,0 +1,19 @@
+.register{
+    width: 100%;
+}
+.register-header{
+    width: 95%;
+    height: 100rpx;
+    padding-top: 50rpx;
+    padding-left: 5%;
+    font-size: 35rpx;
+}
+.regiester-content{
+    width: 90%;
+    padding: 50rpx 5%;
+}
+.regiester-btn{
+    width: 60%;
+    margin-top: 150rpx;
+    padding-left: 20%;
+}

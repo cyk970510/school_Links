@@ -1,0 +1,31 @@
+<view class="content">
+    <view class="content-header">
+        <view class="content-header__img">
+            <image mode="scaleToFill" src="{{ itemData.img }}"></image>
+        </view>
+        <view class="content-header__msg">
+            <view class="content-header__name">{{ itemData.name }}</view>
+            <!-- <view class="content-header__school">{{ itemData.school }}</view> -->
+        </view>
+    </view>
+    <view class="content-body">
+        <view class="content-body__content">
+            {{ itemData.content }}
+        </view>
+        <image class="content-body__img" mode="scaleToFill" src="{{ itemData.contentImg }}"></image>
+    </view>
+    <view class="content-bottom">
+        <view class="content-bottom__wrapper">
+            <van-icon name="cluster-o" />
+            <view class="content-bottom__count">{{ itemData.forwards }}</view>
+        </view>
+        <view class="content-bottom__wrapper">
+            <van-icon name="comment-o" />
+            <view class="content-bottom__count">{{ itemData.comments }}</view>
+        </view>
+        <view class="content-bottom__wrapper">
+            <van-icon name="good-job-o" />
+            <view class="content-bottom__count">{{ itemData.supports }}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="login" hover-class="none" hover-stop-propagation="false">
+    <view class="info" hover-class="none" hover-stop-propagation="false">
+        <image class="logo" src="/images/login/logo.png" mode="widthFix"/>
+        <view class="title" hover-class="none" hover-stop-propagation="false">
+            全校通
+        </view>
+    </view>
+    <view class="btn">
+        <button open-type='getUserInfo' type="primary" bindgetuserinfo='getUserInfo'>微信登录</button>
+    </view>
+</view>

@@ -1,0 +1,52 @@
+.mine{
+    width: 100%;
+}
+.mine-header{
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    display: flex;
+    padding-top: 30rpx;
+}
+.mine-header__img image{
+    width: 125rpx;
+    height: 125rpx;
+}
+.mine-header__msg{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20rpx;
+}
+.mine-header__msgName{
+    font-size: 38rpx;
+}
+.mine-header__msgSchool{
+    font-size: 25rpx;
+}
+.mine-body{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50rpx;
+    border-top: 1rpx solid #eee;
+    padding-top: 30rpx;
+}
+.mine-body__item{
+    padding: 30rpx 0;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 38rpx;
+    color: gray;
+}
+.mine-body__itemIcon{
+    color: gray;
+    font-size: 25rpx;
+}
+.mine-dislog{
+    width: 100%;
+}
+.van-dialog__button {
+    width: 50% !important;
+}
